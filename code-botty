@@ -1,0 +1,193 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Sep  9 10:38:38 2019
+
+@author: daniel.lopez
+"""
+
+print('Hola! Soy Botty, ¿Cómo te llamas?')
+
+name = input()
+
+print('Hola'+ ' ' +str(name)+' '+'¿dime en qué te puedo ayudar: horario, recursos, riesgos laborales?')
+
+horario = 'El horario de oficina es de 08:00 a 15:00 del 15 de junio al 15 de septiembre. El resto del año trabajamos de 09:00 a 18:30'
+recursos = 'Puedes encontrar más información de la empresa en nimerya.tech'
+riesgos = 'Tenemos un manual completo de riesgos labores, deberías leerlo con detenimiento por tu segurdad, dime tu email y te lo envío a tu correo'
+tutor_sector_RRHH = 'Juan Manuel Garcia'
+tutor_sector_finanzas = 'María López Perez'
+tutor_sector_it = 'Pedro Martinez Sanchez'
+parada_de_metro = 'El metro más cercano es Cuzco, línea 1, de ahí tardarás 10 minutos andando a la oficina'
+cheques_restaurante = 'Los cheques restaurante tienes que solicitarlos al departemento de nóminas, extensión 40 o mail nominas@nimerya.tech'
+contacto_rrhh = 'El contacto de RRHH que tienes asignado es Virginia Ramirez. Extensión 1154 o mail vramirez@nimerya.tech'
+
+cosas_se_hacer = [horario, riesgos, recursos,tutor_sector_RRHH,tutor_sector_finanzas,tutor_sector_it,parada_de_metro,cheques_restaurante,contacto_rrhh]
+
+input1 = input()
+
+#while len(input1)>0:    
+    
+#    try:
+        
+if 'horario' in input1:
+    print(horario)
+    
+if 'recursos' in input1:
+        print(recursos)
+        
+if 'riesgos laborales' in input1:
+        print(riesgos)
+        email = input()
+        if len(email) > 0:
+            print('Email enviado! comprueba tu bandeja de entrada')
+            
+if 'tutor' in input1:
+    print('Perfecto! Dime a qué departamento perteneces y lo busco: ¿RRHH,Finanzas, IT?')
+    tutor = input()
+    if 'RRHH' in tutor:
+        print(tutor_sector_RRHH)
+    elif 'Finanzas' in tutor:
+        print(tutor_sector_finanzas)
+    elif 'IT' in tutor:
+        print(tutor_sector_it)
+        
+if 'metro' in input1:
+    print(parada_de_metro)
+    
+if 'cheques' in input1:
+    print(cheques_restaurante)
+    
+if 'contacto' in input1:
+    print(contacto_rrhh)
+    
+    
+#for word in cosas_se_hacer:
+#    if input1 not in word:
+#        print('Lo siento, aún no puedo contestarte a esa pregunta, ponte en contacto con: '+ str(contacto_rrhh))
+#        break
+    
+while 'no' not in input1:
+    
+    print('¿Te puedo ayudar con algo más: Cheques restaurante, paradas de metro cercanas, tutor, contacto RRHH')
+    input1 = input()
+     
+    if 'si' in input1:
+        print('¿ Qué más necesitas?')
+        input1 = input()  
+        if 'horario' in input1:
+            print(horario)
+        
+        if 'recursos' in input1:
+                print(recursos)
+                
+        if 'riesgos laborales' in input1:
+                print(riesgos)
+                email = input()
+                if len(email) > 0:
+                    print('Email enviado! comprueba tu bandeja de entrada')
+                    
+        if 'tutor' in input1:
+            print('Perfecto! Dime a qué departamento perteneces y lo busco: ¿RRHH,Finanzas, IT?')
+            tutor = input()
+            if 'RRHH' in tutor:
+                print(tutor_sector_RRHH, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+            elif 'Finanzas' in tutor:
+                print(tutor_sector_finanzas, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+            elif 'IT' in tutor: 
+                print(tutor_sector_it, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+                
+        if 'metro' in input1:
+            print(parada_de_metro)
+            
+        if 'cheques' in input1:
+            print(cheques_restaurante)
+            
+        if 'contacto' in input1:
+            print(contacto_rrhh)     
+            
+    
+    
+#print('¿Te puedo ayudar con algo más: Cheques restaurante, paradas de metro cercanas, tutor, contacto RRHH')
+#
+#input1 = input()
+#
+#if 'horario' in input1:
+#    print(horario)
+#    
+#if 'recursos' in input1:
+#        print(recursos)
+#        
+#if 'riesgos laborales' in input1:
+#        print(riesgos)
+#        email = input()
+#        if len(email) > 0:
+#            print('Email enviado! comprueba tu bandeja de entrada')
+#            
+#if 'tutor' in input1:
+#    print('Perfecto! Dime a qué departamento perteneces y lo busco: ¿RRHH,Finanzas, IT?')
+#    tutor = input()
+#    if 'RRHH' in tutor:
+#        print(tutor_sector_RRHH, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+#    elif 'Finanzas' in tutor:
+#        print(tutor_sector_finanzas, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+#    elif 'IT' in tutor: 
+#        print(tutor_sector_it, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+#        
+#if 'metro' in input1:
+#    print(parada_de_metro)
+#    
+#if 'cheques' in input1:
+#    print(cheques_restaurante)
+#    
+#if 'contacto' in input1:
+#    print(contacto_rrhh)
+#    
+#if 'si' in input1:
+#    print('¿ Qué más necesitas?')
+#    input1 = input()    
+#    
+#if 'no' in input1:
+#    print('Perfecto, estaré a tu disposición cuando me necesites. Nos vemos')
+    
+    
+#   
+#if 'si' in input1:
+#    print('¿ Qué más necesitas?')
+#    input1 = input()  
+#    if 'horario' in input1:
+#        print(horario)
+#    
+#    if 'recursos' in input1:
+#            print(recursos)
+#            
+#    if 'riesgos laborales' in input1:
+#            print(riesgos)
+#            email = input()
+#            if len(email) > 0:
+#                print('Email enviado! comprueba tu bandeja de entrada')
+#                
+#    if 'tutor' in input1:
+#        print('Perfecto! Dime a qué departamento perteneces y lo busco: ¿RRHH,Finanzas, IT?')
+#        tutor = input()
+#        if 'RRHH' in tutor:
+#            print(tutor_sector_RRHH, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+#        elif 'Finanzas' in tutor:
+#            print(tutor_sector_finanzas, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+#        elif 'IT' in tutor: 
+#            print(tutor_sector_it, 'es el tutor que tienes asignado su despacho está en la 4ª planta al lado de la máquina de café.')
+#            
+#    if 'metro' in input1:
+#        print(parada_de_metro)
+#        
+#    if 'cheques' in input1:
+#        print(cheques_restaurante)
+#        
+#    if 'contacto' in input1:
+#        print(contacto_rrhh)     
+#    
+#for word in cosas_se_hacer:
+#    if input1 not in word:
+#        print('Lo siento, aún no puedo contestarte a esa pregunta, ponte en contacto con: '+ str(contacto_rrhh))
+#        break
+        
+#    except: print('Lo siento, aún no puedo contestarte a esa pregunta, ponte en contacto con: '+ str(contacto_rrhh))
